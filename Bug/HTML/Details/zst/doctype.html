@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="yang">
+    <meta name="keywords" content="yang">
+    <meta name="description" content="this is yang's page">
+    <title>이것이 타이틀이다</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    <style>
+        h1 {
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>YangYang</h1>
+    <script src="./app.js"></script>
+    <p style="font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';">알리익스프레스에서 다양한 제품을 구매해보세요.</p>
+    <script>
+        const h1 = document.querySelector('h1');
+        h1.addEventListener('click', (e) => {
+            if(e.target.textContent === 'YangYang') {
+                e.target.textContent = 'Yangwoo'
+            } else if (e.target.textContent === 'Yangwoo') {
+            e.target.textContent = 'YangYang'
+            }
+        })
+    </script>
+</body>
+</html>

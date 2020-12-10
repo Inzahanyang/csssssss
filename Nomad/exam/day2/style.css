@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212529;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 560px;
+  padding: 12px 12px;
+  background-color: #e0e0e0;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(7, 100px);
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 12px 0;
+  font-size: 0.9em;
+  background-color: #242428;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  color: #ccc;
+}
+.content {
+  background-color: #f13f11;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+}
+.content span {
+  display: block;
+  font-size: 10em;
+  margin-bottom: -30px;
+  font-weight: 900;
+}
+.nav {
+  background-color: #f13f11;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+.footer {
+  background-color: #f13f11;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+
+.rel {
+  display: block;
+  font-size: 10em;
+  font-weight: 900;
+  margin-top: -20px;
+}
+
+.with {
+  display: block;
+  color: #ccc;
+  font-size: 1.8em;
+  margin-top: 20px;
+  margin-left: 20px;
+  line-height: 1.5;
+}
