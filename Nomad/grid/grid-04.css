@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212529;
+}
+/* 
+.grid {
+  justify-content: center;
+  align-content: flex-start;
+  place-content: center;
+  justify-items: start;
+  align-items: start;
+  place-items: center center;
+  color: #fff;
+  display: grid;
+  gap: 5px;
+  height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+} */
+
+.grid {
+  color: #fff;
+  font-weight: bold;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
+  grid-template-rows: repeat(4, 100px);
+  /* grid-auto-flow: column;
+  grid-auto-columns: 100px; */
+  /* grid-auto-rows: 100px; */
+}
+
+.item:nth-child(odd) {
+  background-color: #2ecc71;
+}
+
+.item:nth-child(even) {
+  background-color: #3498db;
+}

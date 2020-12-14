@@ -14,6 +14,7 @@ body {
   width: 400px;
   margin: 0 auto;
   background-color: #eff2f7;
+  /* overflow: hidden; */
 }
 
 .parent::after {
@@ -49,4 +50,5 @@ body {
   padding: 24px 32px;
   background-color: #000;
   color: #fff;
+  font-size: 22px;
 }

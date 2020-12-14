@@ -1,0 +1,106 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topbar {
+  width: 100%;
+  height: 20px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 6px;
+  height: 6px;
+  border: 1px solid #b9b0b0;
+  border-radius: 3px;
+  margin: 0 5px 0 5px;
+}
+.address {
+  width: 40%;
+  height: 10px;
+  border: 1px solid #b9b0b0;
+  border-radius: 3px;
+  margin-left: 20%;
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template:
+    "changes purpleblank speakers artists" 1fr
+    "nav blank speakers artists" 1fr
+    "nav tickets speakers artists" 1fr /1fr 1fr 1fr;
+}
+.speakers h1,
+.artists h1 {
+  font-size: 11px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.speakers li,
+.speakers span,
+.artists li {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.active {
+  background-color: #6e00ff;
+}
+
+.changes {
+  grid-area: changes;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  min-width: 150px;
+}
+.purpleblank {
+  grid-area: purpleblank;
+  background-color: #6c00ff;
+  min-width: 150px;
+}
+.speakers {
+  grid-area: speakers;
+  background-color: #fff;
+  padding: 5px;
+  min-width: 150px;
+}
+.artists {
+  grid-area: artists;
+  background-color: #fff;
+  padding: 5px;
+  min-width: 150px;
+}
+.nav {
+  grid-area: nav;
+  background-color: #ff1402;
+  padding: 5px;
+}
+.blank {
+  grid-area: blank;
+  background-color: #fff;
+}
+.tickets {
+  grid-area: tickets;
+  background-color: #ffc902;
+  padding: 5px;
+}
