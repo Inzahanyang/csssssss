@@ -1,0 +1,193 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #ff7300;
+}
+
+.wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 55% 4% 41%;
+}
+
+.pad {
+  background-color: #ff7300;
+  display: grid;
+  padding: 0 7px 7px 7px;
+}
+
+.left {
+  background-color: #ff1000;
+  display: grid;
+  gap: 2px;
+  grid-template-rows: repeat(7, 1fr);
+  margin-top: -15%;
+  border-right: 3px solid #ff1000;
+  border-left: 1px solid #ff1000;
+  border-bottom: 2px solid #ff1000;
+}
+
+.item {
+  gap: 1px;
+  display: grid;
+  grid-template-columns: 5% 68% 27%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    "subject title skill"
+    "subject title year";
+}
+
+.item:nth-child(3) {
+  background-color: #fff;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-right: 3px solid #fff;
+}
+
+.subject {
+  grid-area: subject;
+  letter-spacing: -0.1em;
+  font-weight: 600;
+  writing-mode: vertical-lr;
+  text-align: center;
+  padding-left: 40%;
+  color: #ff1000;
+  width: 100%;
+  background-color: #ff7300;
+}
+
+.subject span {
+  display: inline-block;
+  transform: rotateZ(180deg);
+}
+
+.title {
+  grid-area: title;
+  letter-spacing: -0.07em;
+  color: #ff1000;
+  font-size: 4em;
+  font-weight: 600;
+  padding: 6% 0 0 10px;
+  background-color: #ff7300;
+}
+
+.skill {
+  grid-area: skill;
+  text-align: center;
+  font-size: 0.8em;
+  letter-spacing: -0.1em;
+  color: #ff1000;
+  background-color: #ff7300;
+  padding-top: 10%;
+}
+
+.year {
+  background-color: #ff7300;
+  grid-area: year;
+  padding-top: 10%;
+  text-align: center;
+}
+
+.year span {
+  display: inline-block;
+  padding: 8px 0;
+  width: 90%;
+  font-size: 0.5em;
+  background-color: #ff1000;
+  color: #ff7300;
+  border-radius: 20px;
+}
+
+.active {
+  color: #fff;
+}
+
+.sp > span {
+  background-color: #fff;
+}
+
+.middle {
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.purple {
+  width: 100%;
+  padding: 10px 0 0 30%;
+  background-color: #f600f6;
+  writing-mode: vertical-lr;
+  font-size: 1.5em;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+}
+.blue {
+  width: 100%;
+  padding: 0 0 10px 30%;
+  text-align: end;
+  background-color: #1a01ff;
+  writing-mode: vertical-lr;
+  font-size: 1.5em;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+}
+
+.blue span {
+  display: inline-block;
+  transform: rotateZ(180deg);
+}
+
+.blue .copy {
+  transform: rotateZ(90deg);
+}
+.logo {
+  position: fixed;
+  font-size: 50px;
+  width: 4%;
+  height: 100%;
+  margin-top: 25%;
+  text-align: center;
+}
+
+.right {
+  background-color: #ff1000;
+  display: grid;
+  grid-template-rows: 10% 90%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5em;
+  padding: 0 20px 0 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0 12px 0 12px;
+}
+
+.card {
+  border-top: 2px solid #000;
+  margin: 0 10px 0 0;
+  padding: 10px 0;
+  font-size: 0.8em;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+
+.name {
+  font-size: 1.5em;
+  margin-bottom: 2px;
+}

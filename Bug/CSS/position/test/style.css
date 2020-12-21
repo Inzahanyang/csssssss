@@ -1,5 +1,9 @@
 .grandparent {
+  width: 800px;
+  height: 600px;
+  position: relative;
   background-color: #1d2f3f;
+  margin: 0 auto;
 }
 
 .parent {
@@ -9,20 +13,25 @@
 }
 
 .child {
-  /* width: 200px;
+  width: 200px;
   height: 200px;
-  line-height: 200px; */
+  line-height: 200px;
   text-align: center;
   color: #fff;
   font-weight: 600;
 }
 
 .red {
+  position: absolute;
+  top: 0;
+  right: 0;
   background-color: #ff4949;
 }
 .yellow {
   background-color: #ffc82c;
+  width: 210px;
 }
 .blue {
   background-color: blue;
+  width: 220px;
 }
