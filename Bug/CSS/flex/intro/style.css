@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #212529;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #eff2f7;
+  align-content: center;
+}
+
+.child {
+  width: 300px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+.red {
+  background-color: #ff4949;
+}
+
+.yellow {
+  background-color: #ffc82c;
+}
+
+.blue {
+  background-color: #0066ff;
+}

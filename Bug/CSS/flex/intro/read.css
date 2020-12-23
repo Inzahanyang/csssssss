@@ -1,0 +1,10 @@
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  /* row | row-reverse | column | column-reverse */
+  flex-wrap: nowrap;
+  /* nowrap | wrap */
+}
+
+/* Main axis | justify-content */
+/* Cross axis | align-items, align-content */
