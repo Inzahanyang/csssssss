@@ -1,0 +1,33 @@
+.like-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+
+/* https://github.com/rohjs/bugless-101/blob/master/css-basic/background/templates/assets/img-house-vertical.jpg?raw=true  */
+
+/* https://github.com/rohjs/bugless-101/blob/master/css-basic/background/templates/assets/img-house.jpg?raw=true */
+
+body {
+  background-image: url(https://github.com/rohjs/bugless-101/blob/master/css-basic/background/templates/assets/img-house-vertical.jpg?raw=true);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 102, 255, 0.36);
+}
+
+.card::after {
+  content: "";
+  background-image: url(https://images.unsplash.com/photo-1608920296963-7c83047bacaf?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 500px;
+  height: 300px;
+}
