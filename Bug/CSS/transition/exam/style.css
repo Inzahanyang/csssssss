@@ -34,9 +34,10 @@ button {
   width: 0;
   height: 2px;
   background-color: #0066ff;
-  transition: width 250ms ease-in-out;
+  transition: width 250ms ease-in-out, background-color 250ms ease-in;
 }
 
 .line-button:hover::after {
   width: 100%;
+  background-color: #ffc82c;
 }
