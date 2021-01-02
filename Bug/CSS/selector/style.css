@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-size: 0.7em;
+}
+
+p {
+  color: #ff4949;
+}
+
+.box2 {
+  color: #ffc82c;
+}
+
+#box3 {
+  color: #0066ff;
+}
+
+.child h1 {
+  color: greenyellow;
+}
+
+.child > h1 {
+  color: forestgreen;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.active ~ li {
+  color: royalblue;
+}
+
+.active + li {
+  color: mediumblue;
+}
+
+.pseudo ol > li:first-child {
+  color: mediumvioletred;
+}
+
+.pseudo ol > li:last-child {
+  color: navajowhite;
+}
+
+.pseudo ol > li:nth-child(3) {
+  color: lightcoral;
+}
+
+.pseudo ol > li:nth-child(odd) {
+  background-color: #0066ff;
+  display: inline-block;
+}
+
+/* 2n , 2n - 1*/
+
+.pseudo ol > li:nth-child(even) {
+  background-color: #ffc82c;
+  display: inline-block;
+}
+
+.ua a {
+  background-color: olivedrab;
+  display: block;
+}
+
+.ua a:hover {
+  background-color: oldlace;
+}
+
+.ua a:active {
+  background-color: peru;
+}
+
+.ua input {
+  margin-top: 20px;
+  outline: none;
+  width: 200px;
+  height: 40px;
+  padding: 12px;
+}
+
+.ua input:focus {
+  border: 2px dashed orchid;
+}
+
+.ua input:active {
+  border: 2px dashed #85d7;
+}
+
+#tex {
+  color: #0066ff;
+}
+
+.a .s .v .e {
+  color: #ff4949;
+}
+
+p {
+  color: #ff4949 !important;
+}
