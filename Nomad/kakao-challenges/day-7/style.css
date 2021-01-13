@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 330px;
+  background-color: #ffffff;
+  border: 5px solid #00c7ad;
+  padding: 48px 24px;
+}
+
+header {
+  display: flex;
+  font-size: 1.5em;
+  margin-bottom: 48px;
+}
+header > div {
+  margin-left: 80px;
+  font-weight: 800;
+}
+main {
+  display: flex;
+  margin-bottom: 50px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #ffbd12;
+  border: 2px solid #000;
+  border-radius: 12px;
+}
+
+.fa-image {
+  font-size: 2em;
+  color: #fff;
+}
+
+.title {
+  margin-left: 20px;
+}
+
+.title > h1 {
+  margin-bottom: 3px;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.title > span {
+  font-weight: 500;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+section > div > span > i {
+  font-size: 1.2em;
+}
+
+.play {
+  border: 2px solid #000;
+  padding: 15px 40px;
+  border-radius: 8px;
+  box-shadow: 0 3px 0 0 black;
+}
+
+.circle {
+  border: 2px solid #000;
+  border-radius: 50%;
+  padding: 13px;
+  box-shadow: 0 3px 0 0 #000;
+}
+
+.arti {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.arti:last-child {
+  margin-bottom: 0;
+}
+
+.box {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+.red {
+  background-color: #f8592b;
+}
+.pink {
+  background-color: #ff89bb;
+}
+.blue {
+  background-color: #1846e5;
+}
+.green {
+  background-color: #00c7ad;
+}
+
+.name {
+  margin-left: 10px;
+  line-height: 1.4;
+}
+.up {
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+.bottom {
+  font-size: 0.7em;
+  color: rgb(143, 137, 137);
+  letter-spacing: 0.06em;
+}
