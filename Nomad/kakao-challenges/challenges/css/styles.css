@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import './common/reset.css';
+@import './common/variables.css';
+
+/* Components */
+@import './components/status-bar.css';
+@import './components/nav-bar.css';
+@import './components/screen-header.css';
+
+/* Screens */
+@import './screens/login.css';
+@import './screens/friends.css';
+@import './components/user-component.css';
+
+body {
+    color: #2e363e;
+    font-family: 'Roboto', sans-serif;
+}

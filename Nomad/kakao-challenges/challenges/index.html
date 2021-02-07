@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>KakaoTalk</title>
+</head>
+
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <i class="fas fa-battery-three-quarters fa-lg"></i>
+            <span>110%</span>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to KakaoTalk clone</h1>
+        <p class="welcome-header-text">
+            If you have a Kakao Account, log in with your email or phone number.
+        </p>
+    </header>
+    <form action="./friends.html" method="GET" id="login-form">
+        <input name="username" type="text" placeholder="Email or Phone number">
+        <input name="password" type="password" placeholder="Password">
+        <input type="submit" value="Log In">
+        <a href="#">Find kakao Account or Password</a>
+    </form>
+</body>
+
+</html>
